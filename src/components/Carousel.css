@@ -1,0 +1,17 @@
+#preview{
+background-color:#494d50 ;
+opacity: 1;
+
+
+}
+img {
+    max-width: 85%;
+    background-color: rgb(70, 66, 66);
+
+}
+
+.thumbs{
+display:none;
+
+
+}
