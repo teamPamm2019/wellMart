@@ -1,9 +1,6 @@
 .footer {
   min-height: 100px;
-  background: #1976d2;
   position: relative;
-  border-top-color: silver;
-  border-top-width: 100;
 }
 
 .footer span {
@@ -14,7 +11,7 @@
   left: 0;
   right: 0;
   padding: 3px;
-  background: #1976d2;
+  background: #006A51;
 }
 
 .footer-links {

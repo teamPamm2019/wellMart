@@ -6,6 +6,7 @@ import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import News from "./pages/News"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/Doctor" component={About} />
           <Route exact path="/discover" component={Discover} />
           <Route exact path="/search" component={Search} />
+          <Route exact path="/news" component={News} />
         </Wrapper>
         <Footer />
       </div>

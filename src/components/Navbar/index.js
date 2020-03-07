@@ -5,8 +5,8 @@ import "./style.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav>
-      <div className="nav-wrapper blue darken-2">
+    <nav className="navbar">
+      <div class="navBar">
         <a href="#" class="brand-logo left">
           <h5>WellMart Health Services and Pharmacy Solutions</h5>
         </a>
@@ -20,8 +20,7 @@ function Navbar() {
                   ? "nav-link active"
                   : "nav-link"
               }
-            >
-              Main
+            >Home
             </Link>
           </li>
           <li>
