@@ -1,6 +1,8 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "./Carousel.css";
+
+
 export default () => (
   <Carousel autoPlay>
     <div>
