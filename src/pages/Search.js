@@ -38,22 +38,39 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <Container style={{ minHeight: "80%" }}>
-          <h1 className="text-center">Search By Breed!</h1>
-          <Alert
-            type="danger"
-            style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
-          >
-            {this.state.error}
-          </Alert>
-          <SearchForm
-            handleFormSubmit={this.handleFormSubmit}
-            handleInputChange={this.handleInputChange}
-            breeds={this.state.breeds}
-          />
-          <SearchResults results={this.state.results} />
-        </Container>
-      </div>
+
+          <div class="row">
+            <div class="col s4">
+              <select id='op1'>
+                  <option value="" disabled selected>Specialties</option>
+                  <option value="Pediatrician">Pediatrician</option>
+                  <option value="OB/GYN">OB/GYN</option>
+                  <option value="Internal Medicine">Internal Medicine</option>
+                  <option value="Family Medicine">Family Medicine</option>
+                  <option value="Cardiologist">Cardiologist</option>
+                  <option value="Neurologist">Neurologist</option>
+              </select>
+            </div>
+            <div class="col s1"></div>
+            <div class="col s7">
+              <form>
+                <span>Zip Code: <input id="to-do" type="text" class="form-control" name="fullName" value=" "></input></span>
+                <span><input id="add-to-do" class="btn waves-effect waves-light" value="submit" type="submit"></input></span>
+              </form>
+              <br>
+              </br>
+              <div id="loader">
+                <img src="https://lh3.googleusercontent.com/proxy/RzB0_x0Vj3ocIjpWDlHRlsJFnYQhvm_pJAabfr6gkFcmhv2-KYDFOxdRNQKWoIvE9TGwd_fS17wcfOdVxcjOaXK5GJk_PKs"></img>
+
+              </div>
+              <div>
+                <div id="doctorList"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
     );
   }
 }

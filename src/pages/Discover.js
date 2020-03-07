@@ -52,17 +52,54 @@ class Discover extends Component {
   render() {
     return (
       <div>
-        <h1 className="text-center">Make New Friends</h1>
-        <h3 className="text-center">
-          Thumbs up on any pups you'd like to meet!
-        </h3>
-        <Card image={this.state.image} handleBtnClick={this.handleBtnClick} />
-        <h1 className="text-center">
-          Made friends with {this.state.matchCount} pups so far!
-        </h1>
-        <Alert style={{ opacity: this.state.match ? 1 : 0 }} type="success">
-          Yay! That Pup Liked You Too!!!
-        </Alert>
+        <div class="row">
+          <div class="col s4">
+            <select id="op1">
+              <option value="" disabled selected>
+                Specialties
+              </option>
+              <option value="Pediatrician">Pediatrician</option>
+              <option value="OB/GYN">OB/GYN</option>
+              <option value="Internal Medicine">Internal Medicine</option>
+              <option value="Family Medicine">Family Medicine</option>
+              <option value="Cardiologist">Cardiologist</option>
+              <option value="Neurologist">Neurologist</option>
+            </select>
+          </div>
+          <div class="col s1"></div>
+          <div class="col s7">
+            <form class="bodyContent">
+              <span>
+                Zip Code:{" "}
+                <input
+                  id="to-do"
+                  type="text"
+                  class="form-control"
+                  name="fullName"
+                  value=" "
+                ></input>
+              </span>
+              <span>
+                <input
+                  id="add-to-do"
+                  class="btn waves-effect waves-light"
+                  value="submit"
+                  type="submit"
+                ></input>
+              </span>
+            </form>
+            <br></br>
+            <div id="loader">
+              <img
+                src="https://lh3.googleusercontent.com/proxy/9gPejvEmIickkvqTquK2yEqOl9XnyWp8p1QiwFqqyo_UTA36WN1W5kQPkBE1EECPgpEzc5zwpu7tXoxlXqgQPLL9Xg"
+                class="bodyContent"
+              ></img>
+            </div>
+            <div>
+              <div id="doctorList"></div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
