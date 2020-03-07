@@ -9,7 +9,7 @@ function Navbar() {
     <nav>
 
       <div className="nav-wrapper blue darken-2" >
-         <a href="#" class="brand-logo left"><h5>WellMart Health Services and Pharmacy Solutions</h5></a>
+         <a href="#" class="brand-logo left"><h5>WellMart Health Care Providers and Pharmacy Solutions</h5></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <Link
