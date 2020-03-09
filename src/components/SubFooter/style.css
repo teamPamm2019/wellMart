@@ -1,0 +1,9 @@
+.SubFooter {
+  background-color: lightgrey;
+}
+
+.SubFooterText {
+  text-align: center;
+  padding: 15px;
+  padding-top: 30px;
+}

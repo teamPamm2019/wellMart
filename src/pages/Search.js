@@ -38,8 +38,8 @@ class Search extends Component {
   render() {
     return (
       <div>
-
-          <div class="row">
+        <div class="container">
+        <div class="row">
             <div class="col s4">
               <select id='op1'>
                   <option value="" disabled selected>Specialties</option>
@@ -60,16 +60,16 @@ class Search extends Component {
               <br>
               </br>
               <div id="loader">
-                <img src="https://lh3.googleusercontent.com/proxy/RzB0_x0Vj3ocIjpWDlHRlsJFnYQhvm_pJAabfr6gkFcmhv2-KYDFOxdRNQKWoIvE9TGwd_fS17wcfOdVxcjOaXK5GJk_PKs"></img>
+                <img src="https://images.all-free-download.com/images/graphicthumb/female_doctor_icon_cartoon_character_design_6829081.jpg"></img>
 
               </div>
               <div>
                 <div id="doctorList"></div>
               </div>
             </div>
-
           </div>
         </div>
+      </div>
 
     );
   }

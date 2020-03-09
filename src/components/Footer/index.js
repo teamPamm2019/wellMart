@@ -6,31 +6,6 @@ function Footer() {
     <footer className="footer">
       <span>
         <div class="container">
-          <p class="footer-social">
-            <a href="//www.facebook.com/">
-              <img
-                src="//assets.ama-assn.org/resources/images/home-page/icon-facebook.png"
-                class="footerSocialIcons"
-              ></img>
-            </a>
-            <a href="//www.twitter.com/">
-              <img
-                src="//assets.ama-assn.org/resources/images/home-page/icon-twitter.png"
-                class="footerSocialIcons"
-              ></img>
-            </a>
-            <a href="//www.linkedin.com/">
-              <img src="//assets.ama-assn.org/resources/images/home-page/icon-linkedin.png" 
-              class="footerSocialIcons"
-              ></img>
-            </a>
-            <a href="//www.plus.google.com/">
-              <img
-                src="//assets.ama-assn.org/resources/images/home-page/icon-google.png"
-                class="footerSocialIcons"
-              ></img>
-            </a>
-          </p>
           <p>
             Copyright 2019
             <a href="" class="footer-links">

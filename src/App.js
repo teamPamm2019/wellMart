@@ -4,6 +4,7 @@ import Discover from "./pages/Discover";
 import About from "./pages/About";
 import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
+import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import News from "./pages/News"
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/search" component={Search} />
           <Route exact path="/news" component={News} />
         </Wrapper>
+        <SubFooter/>
         <Footer />
       </div>
     </Router>
