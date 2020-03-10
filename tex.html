@@ -1,0 +1,81 @@
+<!-- Doctype declaration for a html file  -->
+<!DOCTYPE html>
+<!-- Language selection English USA  -->
+<html lang="en-us">
+
+<head>
+
+    <!-- Specifies the character encoding for the HTML document.
+        Common values:
+        UTF-8 - Character encoding for Unicode
+        ISO-8859-1 - Character encoding for the Latin alphabet -->
+    <meta charset="UTF-8">
+
+    <!-- Page's dimensions and scale in viewport, website is optimized for mobile -->
+    <meta name=“viewport” content=“width=device-width, initial-scale=1, shrink-to-fit=no” />
+
+    <!-- The X-UA-Compatible meta tag is a http-equiv meta tag. -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- 
+    Compiled and minified - Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Family Health Services & More</title>
+
+</head>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s3" style="position: absolute;top:100px;left:50px">
+                <form>
+                    <span>Zip Code: <input id="to-do" type="text" class="form-control clearFields" name="fullName"
+                            value=" ">
+                        <input id="add-to-do" class="btn waves-effect waves-light blue darken-1" value="submit" type="submit"></span>
+                </form>
+                </br>
+                </br>
+                <div id='loader' style='display: none;'>
+                    <img src='./demo_wait.gif' width='32px' height='32px'>
+                </div>
+            </div>
+            <div class="col s3"></div>
+            <div class="col s6">
+                <div id="map-canvas" style="position: absolute;top:100px;right:20px;height: 500px;width: 750px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./test2.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgZNmvPTkEILexjd5Q0u5dKkENSrzXrYc">
+    </script>
+
+
+</body>
+
+</html>
