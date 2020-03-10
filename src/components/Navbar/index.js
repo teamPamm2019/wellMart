@@ -6,10 +6,10 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <div class="navBar">
-        <a href="#" class="brand-logo left">
-          <h5>WellMart Health Services and Pharmacy Solutions</h5>
-        </a>
+      <a href="#" class="brand-logo left">
+        <h5>WELL-MART Health Services and Pharmacy Solutions</h5>
+      </a>
+      <div className="nav-links">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <Link
@@ -20,7 +20,8 @@ function Navbar() {
                   ? "nav-link active"
                   : "nav-link"
               }
-            >Home
+            >
+              Home
             </Link>
           </li>
           <li>

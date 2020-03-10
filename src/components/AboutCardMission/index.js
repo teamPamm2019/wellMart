@@ -1,31 +1,29 @@
 import React from "react";
-import CardBtn from "../CardBtn";
 import "./style.css";
 
-function Card(props) {
+function AboutCard() {
   return (
     <div>
       <div class="container" className="AboutCardBody">
         <p>
-        <strong>The Best Place To Be Your Best.</strong><br></br><br></br>That’s our challenge to people who take
-        pride in what they do and want ongoing opportunities to do it better.
-        <br></br><br></br>Baptist Health South Florida is a community of people who care
-        for one another, and who help each other excel so that everyone achieves
-        his or her personal best. But what is it that makes Baptist Health South
-        Florida so distinctive and unique among other healthcare organizations?
-        Quite simply, it’s our commitment to putting quality first in everything
-        we do. At Baptist Health, we work together to create a level of quality
-        that could only be accomplished with a dedicated, collaborative team.
-        <br></br><br></br>We are once again one of the 2019 Fortune 100 Best Companies
-        to Work For. This is the 19th time Baptist Health has been named to the
-        prestigious list. This recognition is based on employee ratings of their
-        workplace culture, including the level of trust they feel towards
-        leaders, the pride they take in their jobs and the camaraderie they
-        experience with co-workers.
+          <strong>The Best App To Find All Your Medical Needs.</strong>
+          <br></br>
+          <br></br>That’s our challenge to provide patients who take pride in
+          finding the lowest prescription price, nearest doctor, and most
+          up-to-date medical news.
+          <br></br>
+          <br></br>WELL-MART Health Providers and Pharmacy Solutions connects a
+          community of people with their local physician and/or pharmacy. In
+          addition, WELL-MART provides its users with the latest medical news -
+          offering a variety of topics pulled from various sources. What makes
+          WELL-MART so distinctive and unique among other healthcare
+          organizations and service providers? Easy, it’s the ease our users
+          have when searching for the nearest medic, lowest prescription price,
+          or getting medical news.
         </p>
       </div>
     </div>
   );
 }
 
-export default Card;
+export default AboutCard;

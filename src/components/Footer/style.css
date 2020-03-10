@@ -1,17 +1,11 @@
 .footer {
-  min-height: 100px;
-  position: relative;
-}
-
-.footer span {
   text-align: center;
   color: white;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 3px;
-  background: #006A51;
+  margin: 0;
+  width: 100%;
+  padding: 8px;
+  background: #006a51;
 }
 
 .footer-links {
@@ -26,4 +20,8 @@
 
 .bodyContent {
   text-align: left;
+}
+
+.social-icons {
+  padding-left: 15px;
 }
