@@ -1,24 +1,5 @@
-#preview{
-background-color:#494d50 ;
-opacity: .8;
 
-
-}
-img {
-    max-width: 85%;
-    background-color: rgb(70, 66, 66);
-
-}
-
-.thumbs{
-display:none;
-
-
-}
-
-carousel{
-height: 22px;
-
-
-
+.carousel {
+  height: auto;
+  text-align: center;
 }
