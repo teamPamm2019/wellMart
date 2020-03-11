@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="#" class="brand-logo left">
-        <h5>WELL-MART Health Services and Pharmacy Solutions</h5>
+        <h5>WELL-MART Healthcare Providers and Pharmacy Solutions</h5>
       </a>
       <div className="nav-links">
         <ul id="nav-mobile" class="right hide-on-med-and-down">

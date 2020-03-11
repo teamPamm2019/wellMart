@@ -41,7 +41,7 @@ function Footer() {
           Copyright 2019
           <a href="" class="footer-links">
             {" "}
-            WELL-MART Health and Pharmaceutical Services, Inc.
+            WELL-MART Healthcare and Pharmaceutical Services, Inc.
           </a>{" "}
           All rights reserved.
           <p class="footer-links">
