@@ -5,11 +5,17 @@ import "./style.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
+
     <nav className="navbar">
       <a href="#" class="brand-logo left">
         <h5>WELL-MART Healthcare Providers and Pharmacy Solutions</h5>
       </a>
-      <div className="nav-links">
+
+
+    <nav>
+
+      <div className="nav-wrapper blue darken-2" >
+
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <Link

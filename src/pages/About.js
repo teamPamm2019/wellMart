@@ -9,9 +9,9 @@ const About = () => (
   <div class="container">
     <br></br>
     <Carousel />
-    <AboutCardMission />
-    
+
   </div>
+  
 );
 
 render(<About />, document.getElementById("root"));
