@@ -33,7 +33,7 @@ function Navbar() {
                   : "nav-link"
               }
             >
-              Find a Pharmacy
+              Find a Doctor
             </Link>
           </li>
           <li>
@@ -45,7 +45,7 @@ function Navbar() {
                   : "nav-link"
               }
             >
-              Find a Doctor
+              Find a Pharmacy
             </Link>
           </li>
           <li>

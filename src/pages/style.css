@@ -1,0 +1,7 @@
+.rowC {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

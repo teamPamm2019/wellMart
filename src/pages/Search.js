@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import SearchCard from "../components/SearchCard";
+import PharmacyCard from "../components/PharmacyCard";
 
 const Search = () => (
-  <div>
+  <div class="container" className="rowC">
+    <PharmacyCard />
     <SearchCard />
   </div>
 );
