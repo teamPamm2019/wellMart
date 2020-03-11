@@ -1,26 +1,16 @@
 import React, { Component } from "react";
-import API from "../utils/API";
-import Container from "../components/Container";
-import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/SearchResults";
-import Alert from "../components/Alert";
+import { render } from "react-dom";
+import NewsCard from "../components/NewsCard";
+import "../pages/style.css";
+import NewsImage from "../components/NewsImage";
 
-class Search extends Component {
-  state = {
-    search: "",
-    breeds: [],
-    results: [],
-    error: ""
-  };
+const News = () => (
+  <div class="container" className="rowC">
+    <NewsImage />
+    <NewsCard />
+  </div>
+);
 
-  render() {
-    return (
-      <div>
-        <br></br>
-        <img src="https://wellnesspractices.blazonco.com/images/news1.jpg"></img>
-      </div>
-    );
-  }
-}
+render(<News />, document.getElementById("root"));
 
-export default Search;
+export default News;
