@@ -11,7 +11,7 @@ class NewsCard extends Component {
   }
   componentDidMount() {
     fetch(
-      "http://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=381c62fd27614fcc9a63adf478bdd823"
+      "http://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=381c62fd27614fcc9a63adf478bdd823&limit=10"
     )
       .then(response => {
         return response.json();
@@ -26,14 +26,17 @@ class NewsCard extends Component {
   render() {
     console.log(this.state);
     return (
-      <div className="NewsCard">
+      <div className="NewsCard" class="container">
         {this.state.articles.map((item, index) => {
           return (
-            <div>
-              <h4 style={{ textAlign: "left" }}>{item.title}</h4>
-              <b>{item.author}</b>
-              <img src={item.urlToImage} style={{ width: "50vw" }} />
+            <div className="newsBox">
+              <h5 style={{ textAlign: "center" }}>{item.title}</h5>
+              <br></br>
+              <img src={item.urlToImage} style={{ width: "40vw" }} />
+              <br></br>
               <a href={item.url}>Read More</a>
+              <br></br>
+              <b>{item.author}</b>
               <p>{item.content}</p>
             </div>
           );
@@ -43,45 +46,5 @@ class NewsCard extends Component {
   }
 }
 
-// function NewsCard() {
-//   return (
-//     <div class="container-fluid">
-//       <div class="row">
-//         <div class="col-xs-12" id="header">
-//           <h3>Health & Wellness News</h3>
-//         </div>
-//       </div>
-
-//       <div class="row">
-//         <div class="col-xs-12" id="buttonArea"></div>
-//       </div>
-
-//       <div class="row">
-//         <div class="col-xs-9" id="gifArea"></div>
-//       </div>
-
-//       <div class="col-xs-3">
-//         <form>
-//           <fieldset>
-//             <h5 id="moreNews">Search Your Health Topic</h5>
-//             <input type="text" placeholder="E.g., Senior Care"></input>
-//             <button type="submit" class="btn submit" data="submitBtn">
-//               Submit
-//             </button>
-//           </fieldset>
-//         </form>
-//       </div>
-
-//       const topics = ["music"]
-
-//       <script src="https://code.jquery.com/jquery.js"></script>
-//       <script
-//         src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-//         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-//         crossorigin="anonymous"
-//       ></script>
-//     </div>
-//   );
-// }
 
 export default NewsCard;
