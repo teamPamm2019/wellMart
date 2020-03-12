@@ -37,7 +37,7 @@ const APIkey= process.env.REACT_APP_GOOGLE_KEY;
 
   render() {
     return (
-      <div style={{ width: 500, height: 500 }} id={this.props.id} />
+      <div style={{ width: 500, height: 400 }} id={this.props.id} />
     );
   }
 }

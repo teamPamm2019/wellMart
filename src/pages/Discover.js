@@ -1,4 +1,4 @@
-import Map from './googlemaps';
+import Map from '../googleMaps/googlemaps';
 import React from 'react';
 import {Component} from 'react';
 
