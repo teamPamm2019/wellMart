@@ -7,38 +7,44 @@ import SearchResults from "../components/SearchResults";
 class Search extends Component {
   state = {
     search: "",
-    breeds: [],
+    location: [],
     results: [],
     error: ""
   };
 
   // When the component mounts, get a list of all available base breeds and update this.state.breeds
   componentDidMount() {
-    API.getBaseBreedsList()
-      .then(res => this.setState({ breeds: res.data.message }))
+    this.loadDoctors();
+  }
+  loadDoctors = () => {
+
+    API.getDoctor()
+      .then(res => this.setState({location: res.data, name:"", street:"", city:"", state:"", zip:"", phone: ""}))
       .catch(err => console.log(err));
   }
 
-  handleInputChange = event => {
+ handleInputChange = event=> {
     this.setState({ search: event.target.value });
   };
 
+
   handleFormSubmit = event => {
     event.preventDefault();
-    API.getDogsOfBreed(this.state.search)
+    API.getDoctor(this.state.search)
       .then(res => {
         if (res.data.status === "error") {
-          throw new Error(res.data.message);
+          throw new Error(res.data.location);
         }
-        this.setState({ results: res.data.message, error: "" });
+        this.setState({ results: res.data.location, error: "" });
       })
-      .catch(err => this.setState({ error: err.message }));
+      .catch(err => this.setState({ error: err.location}));
   };
+
   render() {
     return (
       <div>
-        <Container style={{ minHeight: "80%" }}>
-          <h1 className="text-center">Search By Breed!</h1>
+        <Container style={{ minHeight: "20%" }}>
+          <h4 className="text-center">Search for Doctor</h4>
          
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
@@ -50,6 +56,6 @@ class Search extends Component {
       </div>
     );
   }
-}
+};
 
 export default Search;
