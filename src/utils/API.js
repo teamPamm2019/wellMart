@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Export an object containing methods we'll use for accessing the Dog.Ceo API
-const APIkey2= process.env.REACT_APP_GOOGLE_KEY;
+const APIkey2= process.env.REACT_APP_BETDOC_KEY;
 
 export default {
 
