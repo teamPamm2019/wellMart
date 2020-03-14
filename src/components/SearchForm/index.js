@@ -14,10 +14,10 @@ function SearchForm(props) {
           type="text"
           className="form-control"
           placeholder="type your zipcode"
-          id="doctor"
+          id="add-to-do"
         />
 
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
+        <button type="submit" onClick={props.handleFormSubmit} className="btn waves-effect waves-light blue darken-1">
           Search
         </button>
       </div>

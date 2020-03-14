@@ -1,6 +1,11 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
+import SearchForm from "../components/SearchForm";
+import SearchResults from "../components/SearchResults";
+
+
+
 
 const mapStyles = {
   width: "50%",
@@ -149,16 +154,21 @@ export class MapContainer extends Component {
   // }
 
   render() {
+
+
     return (
+
+    
       <Map
         google={this.props.google}
         zoom={14}
         style={mapStyles}
         initialCenter={{ lat: 25.827848, lng: -80.316078 }}
-      >
+      ><SearchForm/>
         {this.displayMarkers()}
         {/* {this.displayInfoWindow()} */}
       </Map>
+  
     );
   }
 }
