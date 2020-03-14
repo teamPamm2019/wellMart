@@ -1,0 +1,19 @@
+.newsImage {
+  padding-left: 15px;
+}
+.moreNews {
+  text-align: center;
+}
+h2 {
+  text-align: left;
+}
+.newsBox {
+  border-style: double;
+  background-color: #ffffe0;
+  text-align: justify;
+  padding: 25px;
+}
+.NewsCard {
+  padding-bottom: 10%;
+  
+}

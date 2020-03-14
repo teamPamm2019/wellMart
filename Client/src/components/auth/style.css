@@ -1,0 +1,11 @@
+.loginCard {
+  border-style: double;
+  padding: 25px;
+  background-color: lightyellow;
+}
+.loginBody {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+  padding-bottom: 26%;
+}
