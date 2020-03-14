@@ -8,6 +8,7 @@ const News = () => (
   <div class="container" className="rowC">
     <NewsImage />
     <NewsCard />
+    
   </div>
 );
 

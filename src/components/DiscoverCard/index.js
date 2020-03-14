@@ -4,7 +4,10 @@ import "./style.css";
 function DiscoverCard() {
   return (
     <div className="doctorImage">
-      <img src="https://lh3.googleusercontent.com/proxy/8hG7WFh9j9aND-t9j1rIMxz2Ux9MmdMIwPN0YSxHOUE39dEuQ6C2A54bDFDlDrZeob7eO8ag-3yfGwK-87FInYPBgNAlxxA"></img>
+      <img
+        src="https://i.pinimg.com/originals/26/4e/30/264e30439c42387c1e3c48d2d038429d.png"
+        className="doctorImage"
+      ></img>
     </div>
   );
 }

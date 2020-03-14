@@ -5,9 +5,9 @@ import DoctorCard from "../components/DoctorCard";
 import "../pages/style.css";
 
 const Discover = () => (
-  <div class="container" className="rowC">
-    <DoctorCard />
+  <div class="container" className="rowD">
     <DiscoverCard />
+    <DoctorCard />
   </div>
 );
 

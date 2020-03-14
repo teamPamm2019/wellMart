@@ -26,7 +26,7 @@ class NewsCard extends Component {
   render() {
     console.log(this.state);
     return (
-      <div className="NewsCard" class="container">
+      <div className="NewsCard">
         {this.state.articles.map((item, index) => {
           return (
             <div className="newsBox">
@@ -45,6 +45,5 @@ class NewsCard extends Component {
     );
   }
 }
-
 
 export default NewsCard;

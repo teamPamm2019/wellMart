@@ -6,11 +6,24 @@ import "./style.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#" class="brand-logo left">
+      <a href="/" class="brand-logo left">
         <h5>WELL-MART Healthcare Providers and Pharmacy Solutions</h5>
       </a>
       <div className="nav-links">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <Link
+              to="/login"
+              className={
+                window.location.pathname === "/" ||
+                window.location.pathname === "/login"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Login
+            </Link>
+          </li>
           <li>
             <Link
               to="/"

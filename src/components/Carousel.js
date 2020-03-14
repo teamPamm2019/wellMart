@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "./Carousel.css";
+
 export default () => (
   <Carousel autoPlay>
     <div class="carousel carousel-slider">
@@ -13,17 +14,17 @@ export default () => (
     </div>
     <div class="carousel carousel-slider">
       <img
-          class="pharmacy"
-          src="https://www.medprostaffing.com/wp-content/uploads/2019/05/iStock-922526244.jpg"
-          alt="2"
+        class="pharmacy"
+        src="https://www.medprostaffing.com/wp-content/uploads/2019/05/iStock-922526244.jpg"
+        alt="2"
       />
       <p className="legend">Compare Nearest Prescription Prices</p>
     </div>
     <div class="carousel carousel-slider">
       <img
-          class="medicalNews"
-          src="https://hhp-blog.s3.amazonaws.com/2016/04/medical-news-blog-04-22-16.jpg"
-          alt="2"
+        class="medicalNews"
+        src="https://hhp-blog.s3.amazonaws.com/2016/04/medical-news-blog-04-22-16.jpg"
+        alt="2"
       />
       <p className="legend">Learn The Latest Medical & Wellness News</p>
     </div>

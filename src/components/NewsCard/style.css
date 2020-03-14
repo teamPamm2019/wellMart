@@ -12,6 +12,8 @@ h2 {
   background-color: #ffffe0;
   text-align: justify;
   padding: 25px;
-  overflow-y: scroll;
+}
+.NewsCard {
+  padding-bottom: 10%;
   
 }
