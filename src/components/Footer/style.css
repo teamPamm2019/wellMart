@@ -6,9 +6,9 @@
 
 .footer span {
   position: absolute;
-  bottom: 0;
+  bottom: 70;
   left: 0;
   right: 0;
-  padding: 20px;
+  padding: 0px;
   background: #B8B8B8;
 }

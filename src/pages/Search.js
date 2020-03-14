@@ -41,15 +41,17 @@ class Search extends Component {
   };
 
   render() {
+
     return (
       <div>
+      
         <Container style={{ minHeight: "20%" }}>
-          <h4 className="text-center">Search for Doctor</h4>
+          <h4 className="text-center">Search for a Pharmacy Near You!</h4>
          
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
-            breeds={this.state.breeds}
+            location={this.state.location}
           />
           <SearchResults results={this.state.results} />
         </Container>
