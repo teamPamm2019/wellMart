@@ -5,9 +5,8 @@ function SearchResults(props) {
   return (
     <ul className="list-group search-results">
       {props.results.map(result => (
-        <li key={props.result} className="list-group-item">
-
-        <p> {this.props.name}</p>
+        <li key={result.uid} className="list-group-item">
+        <p> {result.name}</p>
         </li>
       ))}
     </ul>

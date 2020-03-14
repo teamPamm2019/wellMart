@@ -28,7 +28,7 @@ function Navbar() {
               to="/discover"
               className={window.location.pathname === "/discover" ? "nav-link active" : "nav-link"}
             >
-             Pharmacy Search
+             Doctor Search
             </Link>
           </li>
           <li>
@@ -36,7 +36,7 @@ function Navbar() {
               to="/search"
               className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
             >
-             Doctor Search
+             test Search
             </Link>
           </li>
         </ul>

@@ -13,7 +13,7 @@ function SearchForm(props) {
           name="doctor"
           type="text"
           className="form-control"
-          placeholder=""
+          placeholder="type your zipcode"
           id="doctor"
         />
 

@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 
+
 class Search extends Component {
   state = {
     search: "",
@@ -35,7 +36,7 @@ class Search extends Component {
         if (res.data.status === "error") {
           throw new Error(res.data.location);
         }
-        this.setState({ results: res.data.location, error: "" });
+        this.setState({ results: res.data.data, error: "" });
       })
       .catch(err => this.setState({ error: err.location}));
   };
@@ -46,7 +47,7 @@ class Search extends Component {
       <div>
       
         <Container style={{ minHeight: "20%" }}>
-          <h4 className="text-center">Search for a Pharmacy Near You!</h4>
+          <p className="text-center">Search Near You!</p>
          
           <SearchForm
             handleFormSubmit={this.handleFormSubmit}
@@ -55,6 +56,8 @@ class Search extends Component {
           />
           <SearchResults results={this.state.results} />
         </Container>
+
+        
       </div>
     );
   }
