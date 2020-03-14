@@ -161,7 +161,7 @@ export class MapContainer extends Component {
     
       <Map
         google={this.props.google}
-        zoom={14}
+        zoom={10}
         style={mapStyles}
         initialCenter={{ lat: 25.827848, lng: -80.316078 }}
       ><SearchForm/>

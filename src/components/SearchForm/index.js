@@ -7,7 +7,7 @@ function SearchForm(props) {
     <form className="search">
       <div className="form-group">
         <label htmlFor="doctors"></label>
-        <input
+        <input 
           value={props.search}
           onChange={props.handleInputChange}
           name="doctor"
@@ -16,10 +16,10 @@ function SearchForm(props) {
           placeholder="type your zipcode"
           id="add-to-do"
         />
-
-        <button type="submit" onClick={props.handleFormSubmit} className="btn waves-effect waves-light blue darken-1">
+  <button type="submit" onClick={props.handleFormSubmit} className="btn waves-effect waves-light blue darken-1">
           Search
         </button>
+       
       </div>
     </form>
   );

@@ -1,6 +1,9 @@
 form.search {
-  overflow: 220px;
+  overflow: 200px;
+  margin-left: auto;
   margin-bottom: 10px;
+  width:400px;
+  padding-right: auto;
 }
 
 form.search button[type="submit"] {
