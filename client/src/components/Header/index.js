@@ -37,8 +37,7 @@ function Header() {
           <div class="row">
             <div class="col-md-12">
               <p className="headerText">
-                The Most Efficient Finder For All Your Medical & Pharmaceutical
-                Needs
+                WELL-MART Health Providers & Pharmaceutical Services
               </p>
             </div>
           </div>

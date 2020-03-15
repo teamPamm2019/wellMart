@@ -1,3 +1,10 @@
 .doctorImage {
-  padding: 20px;
+  padding-top: 5%;
+  height: 200px;
+  width: auto;
+}
+
+.googleMaps {
+  width: auto;
+  height: 300px;
 }

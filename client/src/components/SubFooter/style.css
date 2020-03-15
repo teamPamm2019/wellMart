@@ -1,11 +1,10 @@
 .SubFooter {
   background-color: lightgrey;
-}
-
-.SubFooterText {
+  position: absolute;
+  width: 100%;
+  bottom: 15%;
+  margin-bottom: 5px;
   text-align: center;
-  padding: 15px;
-  padding-top: 30px;
   font-weight: bold;
   font-size: larger;
 }

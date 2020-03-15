@@ -26,7 +26,7 @@ class NewsCard extends Component {
   render() {
     console.log(this.state);
     return (
-      <div className="NewsCard">
+      <div>
         {this.state.articles.map((item, index) => {
           return (
             <div className="newsBox">

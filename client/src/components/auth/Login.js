@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
+import "./style.css";
 
 class Login extends Component {
   constructor() {
@@ -53,15 +54,18 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container" style={{ background: "white",opacity:"0.8",position:"fixed",top:"110px",left:"230px" }}>
+      <div>
         <div style={{ marginTop: "4rem" }} className="row">
-          <div className="col s8 offset-s2">
+          <div className="authoCard col s8 offset-s2">
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
                 <b>Login</b> below
               </h4>
               <p className="black-text text-darken-4">
-                Don't have an account? <Link to="/register"><b>Register</b></Link>
+                Don't have an account?{" "}
+                <Link to="/register">
+                  <b>Register</b>
+                </Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
@@ -76,7 +80,9 @@ class Login extends Component {
                     invalid: errors.email || errors.emailnotfound
                   })}
                 />
-                <label htmlFor="email" style={{color:"black"}}>Email</label>
+                <label htmlFor="email" style={{ color: "black" }}>
+                  Email
+                </label>
                 <span className="red-text">
                   {errors.email}
                   {errors.emailnotfound}
@@ -93,7 +99,9 @@ class Login extends Component {
                     invalid: errors.password || errors.passwordincorrect
                   })}
                 />
-                <label htmlFor="password" style={{color:"black"}}>Password</label>
+                <label htmlFor="password" style={{ color: "black" }}>
+                  Password
+                </label>
                 <span className="red-text">
                   {errors.password}
                   {errors.passwordincorrect}

@@ -8,7 +8,7 @@ function SubFooter() {
         <div>
           <div class="row">
             <div class="col-md-12">
-              <p className="SubFooterText">
+              <p>
                 The Most Efficient Finder For All Your Medical & Pharmaceutical
                 Needs
               </p>
