@@ -19,7 +19,7 @@ import Doctor from "./pages/Doctor";
 import About from "./pages/About";
 import Search from "./pages/Search";
 import Header from "./components/Header";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/Wrapper"; 
 import News from "./pages/News";
 
 import "./App.css";
@@ -65,7 +65,7 @@ class App extends Component {
               <PrivateRoute exact path="/Header" />
 
               <PrivateRoute exact path="/doctor" component={About} />
-              <PrivateRoute exact path="/discover" component={Doctor} />
+              <PrivateRoute exact path="/discover" component={Discover} />
               <PrivateRoute exact path="/search" component={Search} />
               <PrivateRoute exact path="/news" component={News} />
             </Switch>
