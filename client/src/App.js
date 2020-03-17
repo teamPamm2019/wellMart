@@ -13,11 +13,15 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+
+import Doctor from "./pages/Doctor";
+
 import About from "./pages/About";
 import Search from "./pages/Search";
 import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 import News from "./pages/News";
+
 import "./App.css";
 import Discover from "../src/pages/Discover";
 import Navbar from "../src/components/Navbar";
@@ -59,8 +63,9 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/Header" />
+
               <PrivateRoute exact path="/doctor" component={About} />
-              <PrivateRoute exact path="/discover" component={Discover} />
+              <PrivateRoute exact path="/discover" component={Doctor} />
               <PrivateRoute exact path="/search" component={Search} />
               <PrivateRoute exact path="/news" component={News} />
             </Switch>
