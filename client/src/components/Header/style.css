@@ -1,5 +1,7 @@
 .Header {
   background-color: lightgrey;
+  border-style: double;
+  border-color: brown;
 }
 
 .headerText {

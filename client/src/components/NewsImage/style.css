@@ -1,9 +1,6 @@
 .newsImage {
-  background-size: cover;
-  background-position: center;
-  background-clip: content-box;
   height: 200px;
   width: auto;
   position: relative;
-  margin: 0;
+  margin-top: 20%;
 }

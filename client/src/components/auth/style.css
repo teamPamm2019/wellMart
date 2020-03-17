@@ -1,8 +1,12 @@
 .authoCard {
   margin: 5%;
   background-color: lightyellow;
+  border-style: double;
+  border-color: brown;
 }
 .registerCard {
   margin: 5%;
   background-color: lightyellow;
+  border-style: double;
+  border-color: brown;
 }

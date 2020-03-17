@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-// import API from "./utils/API";
-// import Wrapper from "./components/Wrapper";
+
 import Form from "../components/Form";
 import { Container } from "../components/Grid";
 import Wrapper from "../components/Wrapper";
 import API from "../utils/API";
 import "../pages/style.css";
-// import Form from "./components/Form";
-// import { Container } from "./components/Grid";
+
 
 export class MapContainer extends Component {
   state = {

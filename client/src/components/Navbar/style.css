@@ -7,6 +7,10 @@ nav.navbar.navbar-default {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+  border-right-style: double;
+  border-left-style: double;
+  border-bottom-style: double;
+  border-color: brown;
 }
 .Icon {
   background-image: url(../../assets/images/icon.png);
