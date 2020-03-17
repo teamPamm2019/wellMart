@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+import "./style.css";
 
 class Register extends Component {
   constructor() {
@@ -53,16 +54,18 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container" style={{ background: "white",opacity:"0.8",position:"fixed",top:"110px",left:"230px" }}>
+      <div className="registerCard">
         <div className="row">
           <div className="col s8 offset-s2">
-
-            <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+            <div className="row">
               <h4>
                 <b>Register</b> below
               </h4>
               <p className="black-text text-darken-4">
-                Already have an account? <Link to="/login"><b>Log in</b></Link>
+                Already have an account?{" "}
+                <Link to="/login">
+                  <b>Log in</b>
+                </Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
@@ -77,7 +80,9 @@ class Register extends Component {
                     invalid: errors.name
                   })}
                 />
-                <label htmlFor="name" style={{color:"black"}}>Name</label>
+                <label htmlFor="name" style={{ color: "black" }}>
+                  Name
+                </label>
                 <span className="red-text">{errors.name}</span>
               </div>
               <div className="input-field col s12">
@@ -91,7 +96,9 @@ class Register extends Component {
                     invalid: errors.email
                   })}
                 />
-                <label htmlFor="email" style={{color:"black"}}>Email</label>
+                <label htmlFor="email" style={{ color: "black" }}>
+                  Email
+                </label>
                 <span className="red-text">{errors.email}</span>
               </div>
               <div className="input-field col s12">
@@ -105,7 +112,9 @@ class Register extends Component {
                     invalid: errors.password
                   })}
                 />
-                <label htmlFor="password" style={{color:"black"}}>Password</label>
+                <label htmlFor="password" style={{ color: "black" }}>
+                  Password
+                </label>
                 <span className="red-text">{errors.password}</span>
               </div>
               <div className="input-field col s12">
@@ -119,7 +128,9 @@ class Register extends Component {
                     invalid: errors.password2
                   })}
                 />
-                <label htmlFor="password2" style={{color:"black"}}>Confirm Password</label>
+                <label htmlFor="password2" style={{ color: "black" }}>
+                  Confirm Password
+                </label>
                 <span className="red-text">{errors.password2}</span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>

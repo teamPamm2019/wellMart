@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 class Navbar extends Component {
   render() {
@@ -13,7 +14,8 @@ class Navbar extends Component {
                 fontFamily: "monospace"
               }}
               className="col s5 brand-logo center black-text"
-            ><b>Home</b>
+            >
+              <b>Home</b>
             </Link>
           </div>
         </nav>
@@ -21,7 +23,5 @@ class Navbar extends Component {
     );
   }
 }
-
-
 
 export default Navbar;

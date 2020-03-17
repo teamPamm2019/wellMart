@@ -1,5 +1,5 @@
 nav.navbar.navbar-default {
-  margin-top: 0; 
+  margin-top: 0;
   margin-bottom: 0;
 }
 .navbar {
@@ -7,7 +7,11 @@ nav.navbar.navbar-default {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
-  
+}
+.Icon {
+  background-image: url(../../assets/images/icon.png);
+  margin-top: 5px;
+  margin-right: 20px;
 }
 /* h5 {
   padding-left: 20px;

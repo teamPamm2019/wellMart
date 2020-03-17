@@ -49,8 +49,8 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Navbar />
             <Header />
+            <Navbar />
             <Route exact path="/Navbar" component={Navbar} />
 
             <Route exact path="/" component={Landing} />

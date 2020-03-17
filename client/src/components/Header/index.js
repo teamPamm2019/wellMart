@@ -36,9 +36,9 @@ function Header() {
         <div>
           <div class="row">
             <div class="col-md-12">
-              <p className="headerText">
+              <h1 className="headerText">
                 WELL-MART Health Providers & Pharmaceutical Services
-              </p>
+              </h1>
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
 .SubFooter {
   background-color: lightgrey;
-  position: absolute;
+  color: #006a51;
+  position: relative;
   width: 100%;
   bottom: 15%;
+  padding-top: 5px;
   margin-bottom: 5px;
   text-align: center;
   font-weight: bold;

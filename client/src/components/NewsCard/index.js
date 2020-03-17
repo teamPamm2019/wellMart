@@ -26,7 +26,7 @@ class NewsCard extends Component {
   render() {
     console.log(this.state);
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         {this.state.articles.map((item, index) => {
           return (
             <div className="newsBox">

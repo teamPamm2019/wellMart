@@ -1,19 +1,31 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 class Landing extends Component {
   render() {
     return (
-      <div style={{ height: "75vh", background: "white",opacity:"0.8",height:"300px",position:"fixed",top:"300px",left:"230px" }} className="container valign-wrapper">
+      <div
+        style={{
+          height: "75vh",
+          background: "lightyellow",
+          opacity: "0.8",
+          height: "300px",
+          position: "fixed",
+          top: "300px",
+          left: "230px"
+        }}
+        className="container valign-wrapper"
+      >
         <div className="row">
           <div className="col s12 center-align">
             <h3>
-              <b style={{ color: "black"}}>User authentication</b> 
+              <b style={{ color: "black" }}>User authentication</b>
             </h3>
             <br />
             <div className="col s6">
               <Link
-                to="/register" 
+                to="/register"
                 style={{
                   width: "140px",
                   borderRadius: "3px",

@@ -10,10 +10,16 @@ h2 {
 .newsBox {
   border-style: double;
   background-color: #ffffe0;
-  text-align: justify;
-  padding: 10px;
   text-align: center;
-  margin-right: 10%;
-  margin-left: 5%;
-  margin-bottom: 3%;
+  margin-top: 5%;
+  margin-left: 100px;
+  width: 100%
+  ;
+}
+.apiCard {
+  overflow: hidden;
+}
+.apiImage {
+  width: fit-content;
+  height: fit-content;
 }
