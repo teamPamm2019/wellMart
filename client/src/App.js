@@ -27,6 +27,7 @@ import Discover from "../src/pages/Discover";
 import Navbar from "../src/components/Navbar";
 import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
+import DiscoverCard from "./components/DiscoverCard";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -65,7 +66,7 @@ class App extends Component {
               <PrivateRoute exact path="/Header" />
 
               <PrivateRoute exact path="/doctor" component={About} />
-              <PrivateRoute exact path="/discover" component={Doctor} />
+              <PrivateRoute exact path="/discover" component={DiscoverCard} />
               <PrivateRoute exact path="/search" component={Search} />
               <PrivateRoute exact path="/news" component={News} />
             </Switch>

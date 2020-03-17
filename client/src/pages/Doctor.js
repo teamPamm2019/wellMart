@@ -185,7 +185,7 @@ export class MapContainer extends Component {
 const APIkey3 = process.env.REACT_APP_GOOGLE_KEY;
 
 export default GoogleApiWrapper({
-  apiKey: APIkey3
+  apiKey: "AIzaSyCDzVYRHL82Fl_1D7DSVh5Epa60ItSl3u0"
 })(MapContainer);
 
 // export default MapContainer;
