@@ -6,28 +6,20 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
-
-// import Navbar from "./components/layout/NavBar";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
-
-// import Doctor from "./pages/Doctor";
-
 import About from "./pages/About";
-import Search from "./pages/Search";
 import Header from "./components/Header";
-import Wrapper from "./components/Wrapper";
 import News from "./pages/News";
-
 import "./App.css";
-import Discover from "../src/pages/Discover";
 import Navbar from "../src/components/Navbar";
 import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 import DiscoverCard from "./components/DiscoverCard";
+import DiscoverCard2 from "./components/DiscoverCard2";
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -57,17 +49,15 @@ class App extends Component {
             <Header />
             <Navbar />
             <Route exact path="/Navbar" component={Navbar} />
-
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/Header" />
-
               <PrivateRoute exact path="/doctor" component={About} />
               <PrivateRoute exact path="/discover" component={DiscoverCard} />
-              <PrivateRoute exact path="/search" component={Search} />
+              <PrivateRoute exact path="/search" component={DiscoverCard2} />
               <PrivateRoute exact path="/news" component={News} />
             </Switch>
             <SubFooter />

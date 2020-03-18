@@ -4,13 +4,16 @@ import Form from "../Form";
 import { Container } from "../Grid";
 import Wrapper from "../Wrapper";
 import API from "../../utils/API";
+import drugstore from "./drugstore.json";
 
 export class MapContainer extends Component {
   state = {
     laT1: "",
     lnG1: "",
     zipcode: "",
+    drugstore: drugstore,
     elements: [],
+    elements1: [],
     activeMarker: {},
     selectedPlace: {},
     selectedPhone: {},
@@ -50,25 +53,37 @@ export class MapContainer extends Component {
   };
 
   secondfunc = () => {
-    API.getDoctor(this.state.laT1, this.state.lnG1).then(res => {
-      const results = Object.keys(res.data).map(i => res.data[i]);
-      var newStateArray = this.state.elements.slice();
-      for (var i = 0; i < results[1].length; i++) {
+    var newStateArray = this.state.elements.slice();
+    for (var i = 0; i < drugstore.length; i++) {
+      var R = 3958.8; // Radius of earth in Miles
+      var dLat =
+        (drugstore[i].lat * Math.PI) / 180 - (this.state.laT1 * Math.PI) / 180;
+      var dLon =
+        (drugstore[i].lng * Math.PI) / 180 - (this.state.lnG1 * Math.PI) / 180;
+      var a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos((this.state.laT1 * Math.PI) / 180) *
+          Math.cos((drugstore[i].lat * Math.PI) / 180) *
+          Math.sin(dLon / 2) *
+          Math.sin(dLon / 2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      var d1 = R * c;
+      if (d1 < 10) {
         newStateArray.push({
-          id: i,
-          lat: results[1][i].lat,
-          long: results[1][i].lon,
-          doctorname: results[1][i].name,
-          street: results[1][i].visit_address.street,
-          city: results[1][i].visit_address.city,
-          state: results[1][i].visit_address.state,
-          zip: results[1][i].visit_address.zip,
-          phone: results[1][i].phones[0].number
+          id: drugstore[i].id,
+          lat: drugstore[i].lat,
+          long: drugstore[i].lng,
+          name: drugstore[i].name,
+          street: drugstore[i].street,
+          city: drugstore[i].city,
+          state: drugstore[i].state,
+          zip: drugstore[i].zipcode,
+          phone: drugstore[i].phone
         });
       }
-      this.setState({ elements: newStateArray });
-      console.log(this.state.elements);
-    });
+    }
+    this.setState({ elements: newStateArray });
+    console.log(this.state.elements);
   };
 
   onMarkerClick = (props, marker, e) => {
@@ -111,14 +126,14 @@ export class MapContainer extends Component {
             lat: element.lat,
             lng: element.long
           }}
-          name={element.doctorname}
+          name={element.name}
           street={element.street}
           city={element.city}
           state={element.state}
           zip={element.zip}
           phone={element.phone}
           icon={{
-            url: "https://img.icons8.com/emoji/48/000000/man-health-worker.png"
+            url: "https://img.icons8.com/dusk/64/000000/pharmacist.png"
           }}
         />
       );
@@ -128,17 +143,19 @@ export class MapContainer extends Component {
   render() {
     return (
       <Wrapper>
-        <Container className="googleCard">
-          <br/>
-          <br/>
-          <br/>
+        <Container>
+          <br />
+          <br />
+          <br />
           <div>
             <Form
               handleFormSubmit={this.handleFormSubmit}
               handleInputChange={this.handleInputChange}
             />
           </div>
-          <div style={{padding: "100px"}}>
+          <br />
+          <br />
+          <div>
             <Map
               className="map"
               google={this.props.google}
@@ -150,6 +167,7 @@ export class MapContainer extends Component {
               {this.displayMarkers()}
               <Marker
                 name="Zip Code's Center Position"
+                // onClick={this.onMarkerClick}
                 position={{ lat: this.state.laT1, lng: this.state.lnG1 }}
                 icon={{
                   url:
@@ -162,10 +180,10 @@ export class MapContainer extends Component {
                 visible={this.state.showingInfoWindow}
               >
                 <div><strong>{this.state.selectedPlace.name}</strong></div>
+                <div>{this.state.selectedStreet.street},</div>
                 <div>
-                  {this.state.selectedStreet.street},
-                  {this.state.selectedCity.city},
-                  {this.state.selectedState.state},{this.state.selectedZip.zip}
+                  {this.state.selectedCity.city},{" "}
+                  {this.state.selectedState.state}, {this.state.selectedZip.zip}
                 </div>
                 <div>
                   {"phone:"} {this.state.selectedPhone.phone}
@@ -180,9 +198,7 @@ export class MapContainer extends Component {
 }
 
 const APIkey3 = process.env.REACT_APP_GOOGLE_KEY;
-console.log(APIkey3);
 
 export default GoogleApiWrapper({
   apiKey: APIkey3
 })(MapContainer);
-
