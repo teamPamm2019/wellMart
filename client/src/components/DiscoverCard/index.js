@@ -161,7 +161,7 @@ export class MapContainer extends Component {
                 onClose={this.onInfoWindowClose}
                 visible={this.state.showingInfoWindow}
               >
-                <div><strong>{this.state.selectedPlace.name}</strong></div>
+                <div style={{color:"blue"}}><strong>{this.state.selectedPlace.name}</strong></div>
                 <div>
                   {this.state.selectedStreet.street},
                   {this.state.selectedCity.city},
