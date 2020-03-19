@@ -13,7 +13,7 @@ class NewsCard extends Component {
   }
   componentDidMount() {
     fetch(
-      "http://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=" +
+      "https://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=" +
         APIkey4 +
         "&limit=10"
     )
