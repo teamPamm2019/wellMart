@@ -2,6 +2,7 @@ const express = require("express");
 const passport = require("passport");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const path = require("path");
 
 
 const app = express();
@@ -20,6 +21,15 @@ app.use(bodyParser.json());
 
 // DB Config
 const db = require("./config/keys").mongoURI;
+
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/authologin");
