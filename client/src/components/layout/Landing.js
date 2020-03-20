@@ -8,8 +8,6 @@ class Landing extends Component {
       <div
         style={{
           height: "75vh",
-          background: "lightyellow",
-          opacity: "0.8",
           height: "300px",
           position: "fixed",
           top: "300px",
@@ -27,9 +25,9 @@ class Landing extends Component {
               <Link
                 to="/register"
                 style={{
-                  width: "140px",
+                  width: "130px",
                   borderRadius: "3px",
-                  letterSpacing: "1.5px"
+                  letterSpacing: "0.75px"
                 }}
                 className="btn btn-large waves-effect waves-light hoverable pink darken-1"
               >
@@ -40,9 +38,9 @@ class Landing extends Component {
               <Link
                 to="/login"
                 style={{
-                  width: "140px",
+                  width: "130px",
                   borderRadius: "3px",
-                  letterSpacing: "1.5px"
+                  letterSpacing: "0.75px"
                 }}
                 className="btn btn-large waves-effect waves-light hoverable blue darken-3"
               >
