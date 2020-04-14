@@ -25,9 +25,9 @@ class Landing extends Component {
               <Link
                 to="/register"
                 style={{
-                  width: "130px",
+                  width: "140px",
                   borderRadius: "3px",
-                  letterSpacing: "0.75px"
+                  letterSpacing: "1.5px"
                 }}
                 className="btn btn-large waves-effect waves-light hoverable pink darken-1"
               >
@@ -38,9 +38,9 @@ class Landing extends Component {
               <Link
                 to="/login"
                 style={{
-                  width: "130px",
+                  width: "140px",
                   borderRadius: "3px",
-                  letterSpacing: "0.75px"
+                  letterSpacing: "1.5px"
                 }}
                 className="btn btn-large waves-effect waves-light hoverable blue darken-3"
               >

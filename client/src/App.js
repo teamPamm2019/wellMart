@@ -12,11 +12,10 @@ import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import About from "./pages/About";
-import Header from "./components/Header";
 import News from "./pages/News";
+import Header from "./components/Header";
 import "./App.css";
 import Navbar from "../src/components/Navbar";
-import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 import DiscoverCard from "./components/DiscoverCard";
 import DiscoverCard2 from "./components/DiscoverCard2";
@@ -46,8 +45,8 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            {/* <Header /> */}
             <Navbar />
+            <Header />
             <Route exact path="/Navbar" component={Navbar} />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
@@ -60,7 +59,6 @@ class App extends Component {
               <PrivateRoute exact path="/search" component={DiscoverCard2} />
               <PrivateRoute exact path="/news" component={News} />
             </Switch>
-            {/* <SubFooter /> */}
             <Footer />
           </div>
         </Router>
