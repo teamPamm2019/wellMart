@@ -43,6 +43,6 @@
     "react-materialize": "^3.5.9",
     "react-native-easy-grid": "^0.2.2",
     "react-scripts": "^3.4.0",
-    "validator": "^12.2.0"
+    "validator": "^13.7.0"
   }
 }
